@@ -17,7 +17,7 @@ jobs:
       - name: test ament cpplint action
         uses: antonellla/ament-cpplint-action@v0.0.6
         with:
-          ros2-version: 'humble'
+          ros2_version: 'humble'
     #- name: Checkout repository
     #  uses: actions/checkout@v4
     #- name: Install dependencies
