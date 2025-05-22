@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: test ament cpplint action
-        uses: antonellla/ament-cpplint-action@v0.0.8
+        uses: antonellla/ament-cpplint-action@v0.0.9
         with:
           ros2_version: 'humble'
     #- name: Checkout repository
