@@ -14,10 +14,14 @@ jobs:
   ament-cpplint:
     runs-on: ubuntu-22.04
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Install dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install --no-install-recommends -y ros-humble-ament-cpplint
-      shell: sh
+      - name: test ament cpplint action
+        uses: antonellla/ament-cpplint-action
+        with:
+          ros2-version: 'humble'
+    #- name: Checkout repository
+    #  uses: actions/checkout@v4
+    #- name: Install dependencies
+    #  run: |
+    #    sudo apt-get update
+    #    sudo apt-get install --no-install-recommends -y ros-humble-ament-cpplint
+    #  shell: sh
